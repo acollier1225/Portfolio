@@ -3,20 +3,15 @@ import About from "./About";
 import Contact from "./Contact";
 import { motion } from "framer-motion";
 import Projects from "./Projects";
-import Skills from "./Skills";
-import coding from "./coding2.jpg";
+import Skills from "./Resume";
+import coding from "../Images/coding2.jpg";
 import { HashLink as Link } from "react-router-hash-link";
 import "./Home.css";
 
 const Home = () => {
   return (
     <div>
-      <motion.div
-        // initial={{ opacity: 0 }}
-        // animate={{ opacity: 1 }}
-        // transition={{ ease: "easeOut", duration: 2 }}
-        id="home"
-      >
+      <motion.div id="home">
         <img src={coding} />
         <motion.div
           initial={{ opacity: 0 }}

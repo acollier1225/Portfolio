@@ -1,6 +1,6 @@
 import React from "react";
 
-const Skills = () => {
+const Resume = () => {
   return (
     <div className="py-20">
       <div className="font-advent w-56 mx-auto text-4xl p-4 border-4 my-10 tracking-widest">
@@ -19,4 +19,4 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+export default Resume;
