@@ -5,7 +5,7 @@ const SidebarButton = (props) => {
     <div className="z-100">
       <button
         onClick={() => props.collapseSidebar()}
-        className="inline-flex items-center justify-center p-2 m-5 rounded-md text-black-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+        className="inline-flex items-center justify-center p-2 m-5 rounded-md text-black-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-400"
         aria-expanded="false"
       >
         <span class="sr-only">Open main menu</span>

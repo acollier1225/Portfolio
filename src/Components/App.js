@@ -4,6 +4,7 @@ import { Route, Switch } from "react-router-dom";
 import Home from "./Home";
 
 import Sidebar from "./Sidebar/Sidebar";
+import Backdrop from "./Sidebar/Backdrop";
 
 function App() {
   const [sideBarCollapsed, collapse] = useState(true);
@@ -19,7 +20,7 @@ function App() {
         isCollapsed={sideBarCollapsed}
         collapseSidebar={collapseSidebar}
       />
-
+      <Backdrop collapseSidebar={collapseSidebar} />
       <Switch>
         <Route path="/" component={Home} />
       </Switch>
