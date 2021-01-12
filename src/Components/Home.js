@@ -7,6 +7,7 @@ import Skills from "./Resume";
 import coding from "../Images/coding2.jpg";
 import { HashLink as Link } from "react-router-hash-link";
 import "./Home.css";
+import { AnimatedDiv } from "../Animated";
 
 const Home = () => {
   return (

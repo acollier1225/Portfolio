@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
-import headshot from "../Images/headshot.jpg";
-import reactLogo from "../Images/react.png";
-import jsLogo from "../Images/javascript-logo.png";
-import reduxLogo from "../Images/redux-logo.png";
-import nodeLogo from "../Images/nodejs-icon.png";
+import headshot from "../Images/headshot2.jpg";
+import reactLogo from "../Images/react.jpg";
+import jsLogo from "../Images/javascript-logo.jpg";
+import reduxLogo from "../Images/redux-logo.jpg";
+import nodeLogo from "../Images/nodejs-icon.jpg";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 
