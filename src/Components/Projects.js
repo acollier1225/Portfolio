@@ -28,7 +28,7 @@ const Projects = () => {
         PROJECTS
       </h1>
       <div className="grid gap-2 md:grid-cols-2 sm:grid-cols-1">
-        <div className="bg-white flex flex-col pt-6 mx-auto text-center space-y-4 shadow-md w-64 h-64 font-bold hover:shadow-lg transition duration-500 ease-in-out hover: transform hover:scale-110">
+        <div className="bg-white flex flex-col pt-6 mx-auto text-center space-y-4 shadow-md w-64 h-64 font-bold hover:shadow-lg transition duration-500 ease-in-out md:hover: transform md:hover:scale-110">
           Spotify Chat Application
           <div className="text-left px-4 py-2 font-medium">
             A chat application that creates chat rooms based on similar Spotify
@@ -51,7 +51,7 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        <div className="bg-white flex flex-col pt-6 mx-auto text-center space-y-4 shadow-md w-64 h-64 font-bold hover:shadow-lg transition duration-500 ease-in-out hover: transform hover:scale-110">
+        <div className="bg-white flex flex-col pt-6 mx-auto text-center space-y-4 shadow-md w-64 h-64 font-bold hover:shadow-lg transition duration-500 ease-in-out hover: transform md:hover:scale-110">
           Arco Clothing
           <div className="text-left px-4 py-2 font-medium">
             A mock-up e-commerce site that allows you to add clothes from a

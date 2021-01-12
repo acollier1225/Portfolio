@@ -4,7 +4,7 @@ import Contact from "./Contact";
 import { motion } from "framer-motion";
 import Projects from "./Projects";
 import Skills from "./Resume";
-import coding from "../Images/coding2.jpg";
+import coding from "../Images/coding.jpg";
 import { HashLink as Link } from "react-router-hash-link";
 import "./Home.css";
 import { AnimatedDiv } from "../Animated";
