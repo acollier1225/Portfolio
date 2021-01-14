@@ -2,7 +2,6 @@ import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import { motion } from "framer-motion";
 import SidebarButton from "./SidebarButton";
-import Backdrop from "./Backdrop";
 
 const Sidebar = (props) => {
   const sidebarList = (
@@ -68,19 +67,29 @@ const Sidebar = (props) => {
     </nav>
   );
 
+  const backdrop = (
+    <div
+      className="z-30 top-0 fixed h-full w-full"
+      onClick={() => props.collapseSidebar()}
+    ></div>
+  );
+
   return (
-    <motion.div
-      initial={{ width: 0 }}
-      animate={{ width: props.isCollapsed ? 0 : 600 }}
-      transition={{ ease: "easeOut", duration: 0.6 }}
-      className="z-50 fixed top-0 h-full bg-gradient-to-r from-white to black left-0 tracking-widest"
-    >
-      <SidebarButton
-        showSidebar={props.showSidebar}
-        collapseSidebar={props.collapseSidebar}
-      />
-      {props.isCollapsed ? null : sidebarList}
-    </motion.div>
+    <div>
+      <motion.div
+        initial={{ width: 0 }}
+        animate={{ width: props.isCollapsed ? 0 : 600 }}
+        transition={{ ease: "easeOut", duration: 0.6 }}
+        className="z-50 fixed top-0 h-full bg-gradient-to-r from-white to black left-0 tracking-widest"
+      >
+        <SidebarButton
+          showSidebar={props.showSidebar}
+          collapseSidebar={props.collapseSidebar}
+        />
+        {props.isCollapsed ? null : sidebarList}
+      </motion.div>
+      {props.isCollapsed ? null : backdrop}
+    </div>
   );
 };
 

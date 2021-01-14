@@ -2,7 +2,6 @@ import React, { Suspense, lazy, useState } from "react";
 import { Route, Switch } from "react-router-dom";
 
 const Sidebar = lazy(() => import("./Sidebar/Sidebar"));
-const Backdrop = lazy(() => import("./Sidebar/Backdrop"));
 const Home = lazy(() => import("./Home"));
 
 function App() {
@@ -20,7 +19,6 @@ function App() {
           isCollapsed={sideBarCollapsed}
           collapseSidebar={collapseSidebar}
         />
-        <Backdrop collapseSidebar={collapseSidebar} />
         <Switch>
           <Route path="/" component={Home} />
         </Switch>
