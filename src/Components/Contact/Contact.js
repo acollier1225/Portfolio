@@ -9,7 +9,11 @@ const Contact = () => {
       </h1>
       <div className="text-2xl">
         <br />
-        <div>ardencollier1297@gmail.com</div>
+        <div>
+          <a id="email" href="mailto:ardencollier1297@gmail.com">
+            ardencollier1297@gmail.com
+          </a>
+        </div>
       </div>
       <a href="https://www.linkedin.com/in/arden-collier-602646173/">
         <i className="fab transition duration-500 ease-in-out hover: transform hover:scale-110 fa-linkedin linkedIn"></i>

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import About from "./About";
-import Contact from "./Contact";
+import Contact from "./Contact/Contact";
 import { motion } from "framer-motion";
 import Projects from "./Projects";
 import Skills from "./Resume";
@@ -25,20 +25,16 @@ const Home = () => {
           <span id="continue">CONTINUE</span>
           <Link to="#about">
             <br />
-            <div className="down" id="downFirst"></div>
-            <br />
-            <div className="down" id="downSecond"></div>
+            <div className="arrows">
+              <div className="down" id="downFirst"></div>
+              <br />
+              <div className="down" id="downSecond"></div>
+            </div>
           </Link>
         </motion.div>
       </motion.div>
-      {/* <div className="py-20 text-center text-4xl font-bold" id="home">
-        Home
-      </div> */}
-      <motion.div
-        // transition={{ ease: "anticipate", duration: 1 }}
-        className="text-center"
-        id="about"
-      >
+
+      <motion.div className="text-center" id="about">
         <About />
       </motion.div>
       <div className="text-center" id="projects">

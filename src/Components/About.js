@@ -4,6 +4,7 @@ import reactLogo from "../Images/react.jpg";
 import jsLogo from "../Images/javascript-logo.jpg";
 import reduxLogo from "../Images/redux-logo.jpg";
 import nodeLogo from "../Images/nodejs-icon.jpg";
+import cSharpLogo from "../Images/csharp.jpg";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 
@@ -47,18 +48,15 @@ const About = () => {
             <div className="tracking-wide text-xl text-black font-bold text-left">
               Arden Collier
             </div>
-            <p className="mt-2 text-gray-500 text-left">
-              Full Stack Web Developer
-            </p>
+            <p className="mt-2 text-gray-500 text-left">Web Developer</p>
             <p className="mt-2 text-black-500 text-left">
-              Hello! I am a Full Stack Web Developer in the Jacksonville area. I
-              work with React and Node.js, however I am open to work with
-              anything that suits your needs.
+              Hello! I am a Full Stack Web Developer based in Jacksonville,
+              Florida. I work with JavaScript, React, Node.js, C# and ASP.NET.
             </p>
             <div className="font-bold">
               <div>Skills</div>
 
-              <div className="grid sm:mx-16 gap-2 grid-cols-4">
+              <div className="grid sm:mx-16 gap-2 grid-cols-5">
                 <a
                   className={skillIcon}
                   href="https://reactjs.org/"
@@ -86,6 +84,13 @@ const About = () => {
                   target="_blank"
                 >
                   <img src={nodeLogo} />
+                </a>
+                <a
+                  className={skillIcon}
+                  href="https://dotnet.microsoft.com/apps/aspnet"
+                  target="_blank"
+                >
+                  <img src={cSharpLogo} />
                 </a>
               </div>
             </div>

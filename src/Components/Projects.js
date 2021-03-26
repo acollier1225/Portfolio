@@ -58,7 +58,7 @@ const Projects = () => {
             selection to your cart.
             <br />
             <div className="grid sm:mx-auto gap-2 grid-cols-2 py-8">
-              <a href="http://arco-shop.herokuapp.com/" target="_blank">
+              <a href="https://arco-clothing.netlify.app/" target="_blank">
                 <div className="py-4 bg-black text-white text-xl text-bold font-advent w-16 l-16  rounded-full  border-black shadow-xl mx-auto transition duration-500 ease-in-out hover: transform hover:scale-110 text-center">
                   Demo
                 </div>

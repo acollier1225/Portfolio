@@ -22,6 +22,11 @@
   height: 100%;
 }
 
+.arrows {
+  animation: arrows 2.3s linear infinite;
+  position: relative;
+}
+
 .down {
   border: solid white;
   border-width: 0 4px 4px 0;
@@ -92,6 +97,16 @@ html {
   100% {
     border: solid grey;
     border-width: 0 4px 4px 0;
+  }
+}
+
+@keyframes arrows {
+  0%,
+  100% {
+    bottom: 0px;
+  }
+  50% {
+    bottom: 10px;
   }
 }
 
